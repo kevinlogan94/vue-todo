@@ -1,17 +1,18 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Todo/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import Todo from "./components/Todo";
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Todo
   }
 }
 </script>
@@ -25,4 +26,18 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+* {
+  padding: 4px;
+  margin: 8px;
+}
+input {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+.spacing-s { padding: 2px; }
+.spacing-s--bottom { padding-bottom: 2px; }
+.spacing-s-alt { margin: 2px; }
+.spacing-s--bottom-alt { margin-bottom: 2px; }
 </style>
